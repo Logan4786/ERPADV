@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+         <meta charset="UTF-8">
+         <script src="http://code.jquery.com/jquery.js"></script>
+    
+         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+     <title>Formulário</title>
+</head>
+<body>
+ 
+<form class="form-horizontal">
+<fieldset>
+<!-- Nome do formulario -->
+     <legend>Cadastro Processo</legend>
+<!-- Inserir informação-->
+<div class="control-group">
+    <div class="controls">
+        <label class="control-label">Numero</label>
+            &nbsp;&nbsp<input id="numero" name="numero" type="text" placeholder="Insira o numero" class="input-xlarge" required><br></br>
+                 <label class="control-label">Data</label>
+                    &nbsp;&nbsp<input id="data" name="data" type="text" placeholder="Insira a data" class="input-xlarge" required><br></br>
+<!-- Seleção de Objeto -->
+<label class="control-label">Tipo</label>
+      &nbsp;&nbsp<select id="tipo" name="tipo" class="input-xlarge"><br></br>
+          <option></option>
+              <option>Ação de Conhecimento</option>
+                 <option>Ação de Execução</option>
+                    <option>Ação Cautelar</option>
+ <!-- Seleciona Objetos-->
+</select>
+      </div>
+         </div>
+           <div class="controls">
+      <!--Seleciona do tribunal superior-->
+<label class="control-label">Orgão</label>
+      &nbsp;&nbsp<select id="orgao" name="orgao" class="input-xlarge" ><br></br>
+          <option></option>
+              <option>Supremo Tribunal Federal(STF)</option>
+               <option>Conselho Nacional de Justiça(CNJ)</option>
+                   <option>Superior Tribunal de Justiça(STJ)</option>
+                      <option>Justiça Federal </option>
+                         <option>Justiça do Trabalho</option>
+                            <option>Justiça Militar</option>
+                              <option>Justiça Estadual</option>
+                      </select>
+                 </div>
+            </div>
+    <!-- Identifica se o campo é obrigadorio-->
+          <div class="controls">
+      <label class="control-label"></label>
+  &nbsp;    &nbsp <p class="help-block">* Campo Obrigatório</p><br>
+   </div>
+</div>
+<!-- Botão salvar e encaminha para proxima pagina-->
+<div class="control-group">
+                   <div class="controls">
+                     <li><a href="encaminhamento.html"  button id="Salvar" name="salvar" class="btn btn-primary">salvar</button></li></a>
+                     </div>
+                  </div>
+              </fieldset>
+         </form>
+     </body>
+</html>

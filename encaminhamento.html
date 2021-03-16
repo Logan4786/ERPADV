@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+ <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    
+       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+     <title>Formulário</title>
+</head>
+<body>
+ 
+<form class="form-horizontal">
+<fieldset>
+ 
+<!-- Nome do formulario -->
+
+     <legend>Cadastro Encaminhamento</legend>
+ 
+<!-- Inserir informação-->
+
+     <div class="control-group">
+
+  
+     <div class="controls">
+         <label class="control-label">Usuario</label>
+         &nbsp;    &nbsp<input id="usuario" name="usuario" type="text" placeholder="Insira o usuario" class="input-xlarge" required><br></br>
+   
+               <label class="control-label">Processo</label>
+             &nbsp;  &nbsp<input id="processo" name="processo" type="text" placeholder="Insira o processo" class="input-xlarge" required><br></br>
+   
+      
+                <label class="control-label">Data</label>
+         &nbsp;    &nbsp<input id="data" name="data" type="text" placeholder="Insira a data" class="input-xlarge" required><br></br>
+    
+         
+<!-- Seleção de situação do processo -->
+
+  <label class="control-label">Situação</label>
+
+      &nbsp;&nbsp<select id="tipo" situacao="tipo" class="input-xlarge"><br></br> 
+        <option></option>
+          <option>Ativo</option>
+          <option>Pendente</option>
+      <option>Finalizado</option>
+ 
+  </select>
+   
+  
+</div>
+  </div>  
+       
+        <div class="controls">
+             <label class="control-label"></label>
+           &nbsp; &nbsp <p class="help-block">* Campo Obrigatório</p><br>
+   </div>
+</div>
+
+
+
+<!--salva dados no banco de dados -->
+<div class="control-group">
+ 
+  <div class="controls">
+            <li><a href="index.html"<button id="Salvar" name="salvar" class="btn btn-primary">salvar</button></li></a>
+             </div>
+           </div>
+ 
+      </fieldset>
+   </form>
+ 
+</body>
+</html>
